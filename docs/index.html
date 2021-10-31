@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="build/index.css">
+  <title>Aotearoa lockdown counter</title>
+  
+  <meta property="og:title" content="Aotearoa lockdown counter">
+  <meta property="og:description" content="New Zealand lockdown counter">
+  <meta property="og:image" content="logo512.png"/>
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Aotearoa lockdown counter" />
+  <meta name="twitter:description" content="New Zealand lockdown counter">
+  <meta name="twitter:image:src" content="https://torvin.github.io/locked-as/logo512.png"/>
+
+  <link rel="icon" href="favicon.ico">
+  <link rel="alternate icon" href="favicon.ico">
+  <link rel="manifest" href="manifest.json" />
+</head>
+
+<body>
+  <div class="menu">
+    <div id="region" role="radiogroup" class="switches">
+      <button role="radio" data-val="AKL" aria-checked="false">Auckland</button>
+      <button role="radio" data-val="WLG" aria-checked="false">Wellington</button>
+    </div>
+    <div id="level" class="switches">
+      <button role="checkbox" data-val="1" aria-checked="false">Level 1</button>
+      <button role="checkbox" data-val="2" aria-checked="false">Level 2</button>
+      <button role="checkbox" data-val="3" aria-checked="false">Level 3</button>
+      <button role="checkbox" data-val="4" aria-checked="false">Level 4</button>
+    </div>
+  </div>
+  <div id="curTime" class="clock">&nbsp;</div>
+  <div id="curDesc" class="desc">in lockdown</div>
+  <div id="totalTime" class="clock">&nbsp;</div>
+  <div class="desc">in total</div>
+  <button id="music" role="checkbox" aria-checked="false" aria-label="Play music">
+    <svg aria-hidden="true" class="on" viewBox="2 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M18,5V19a1,1,0,0,1-.53.88,1,1,0,0,1-1-.05L10.7,16H8a2,2,0,0,1-2-2V10A2,2,0,0,1,8,8h2.7l5.75-3.83a1,1,0,0,1,1,0A1,1,0,0,1,18,5Z" />
+    </svg>
+    <svg aria-hidden="true" class="off" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M18.41,12l1.3-1.29a1,1,0,0,0-1.42-1.42L17,10.59l-1.29-1.3a1,1,0,0,0-1.42,1.42L15.59,12l-1.3,1.29a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0L17,13.41l1.29,1.3a1,1,0,0,0,1.42,0,1,1,0,0,0,0-1.42Z" />
+      <path
+        d="M13.23,15.77a2.52,2.52,0,0,1,0-3.54l.23-.23-.23-.23a2.49,2.49,0,0,1,2.77-4V5a1,1,0,0,0-.53-.88,1,1,0,0,0-1,0L8.7,8H6a2,2,0,0,0-2,2v4a2,2,0,0,0,2,2H8.7l5.75,3.83A1,1,0,0,0,16,19V16.27A2.58,2.58,0,0,1,13.23,15.77Z" />
+    </svg>
+    <div>Night on the Docks - Sax by Kevin MacLeod CC-BY</div>
+  </button>
+  <audio id="audio" src="Kevin MacLeod - Night on the Docks - Sax.mp3" loop></audio>
+  <script src="build/index.js"></script>
+</body>
+
+</html>
