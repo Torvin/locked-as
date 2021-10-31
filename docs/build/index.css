@@ -48,6 +48,14 @@ button {
 #level {
   justify-self: flex-end;
 }
+#level > [aria-checked=true] {
+  position: relative;
+}
+#level > [aria-checked=true] + [aria-checked=true]::before {
+  content: "+";
+  position: absolute;
+  left: -0.7em;
+}
 
 .switches {
   display: flex;
@@ -57,7 +65,7 @@ button {
   white-space: nowrap;
 }
 .switches > * + * {
-  margin-left: 0.5rem;
+  margin-left: 0.75rem;
 }
 
 [aria-checked=false] {

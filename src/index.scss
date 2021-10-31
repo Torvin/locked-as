@@ -54,6 +54,16 @@ button {
 
 #level {
   justify-self: flex-end;
+
+  > [aria-checked=true] {
+    position: relative;
+
+    & + [aria-checked=true]::before {
+      content: '+';
+      position: absolute;
+      left: -0.7em;
+    }
+  }
 }
 
 .switches {
@@ -65,7 +75,7 @@ button {
   }
   
   > * + * {
-    margin-left: 0.5rem;
+    margin-left: 0.75rem;
   }
 }
 
