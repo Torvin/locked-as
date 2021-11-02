@@ -98,7 +98,6 @@ function writeConfig() {
   localStorage.setItem('config', JSON.stringify(config))
 }
 
-
 const config = readConfig({ region: 'AKL', level: 3 })
 
 document.getElementById('level')?.addEventListener('click', e => {
@@ -115,7 +114,7 @@ document.getElementById('region')?.addEventListener('click', e => {
   if (!(e.target instanceof Element)) { return }
   const val = e.target.getAttribute('data-val')
 
-  if (val) {
+  if (val !== null) {
     config.region = val
     update()
   }
