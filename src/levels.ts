@@ -177,10 +177,14 @@ const Levels: LevelTransition[] = [
     'NL',
   ],
 
-  // NL moves to level 3
+  // NL moves to level 3 and back
   [
     '2021-11-03T00:00:00+13:00',
     3,
+    'NL',
+  ], [
+    '2021-11-12T00:00:00+13:00',
+    2,
     'NL',
   ],
 ]
