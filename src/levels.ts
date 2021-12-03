@@ -187,6 +187,9 @@ const Levels: LevelTransition[] = [
     2,
     'NL',
   ],
+
+  // everyone moves to traffic lights system
+  ['2021-12-03T00:00:00+13:00', 0]
 ]
 
 export default Levels
